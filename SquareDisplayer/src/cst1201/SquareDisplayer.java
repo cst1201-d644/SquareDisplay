@@ -6,6 +6,8 @@
 
 package cst1201;
 
+import java.util.Scanner;
+
 /**
  *
  * @author class
@@ -16,7 +18,21 @@ public class SquareDisplayer {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        System.out.print("Enter a positive integer <= 15: ");
+        Scanner scan = new Scanner(System.in);
+        int input = scan.nextInt();
+        
+        while (input < 1 || input > 15){
+            System.out.print("Incorrect. Please enter another number: ");
+            input = scan.nextInt();
+        }
+        
+        for (int i = 0; i < input; i++){
+            System.out.print("X");
+            for (int j 
+        }
+        System.out.println();
     }
     
 }
