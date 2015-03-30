@@ -20,7 +20,10 @@ public class SquareDisplay {
         int input;
         System.out.print("Enter a positive number and not greater than 15  : ");
         input=keyboard.nextInt();
-        while(input<1 || input>15){}
+        while(input<1 || input>15){
+        System.out.print("incorrect,please enter another integer  : ");
+        input=keyboard.nextInt();
+        }
             for (int i=0;i<input;i++){
                 for(int i2=0;i2<input;i2++){
                     System.out.print("X");}
