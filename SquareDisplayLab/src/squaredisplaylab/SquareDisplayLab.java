@@ -6,6 +6,8 @@
 
 package squaredisplaylab;
 
+import java.util.Scanner;
+
 /**
  *
  * @author class
@@ -16,7 +18,15 @@ public class SquareDisplayLab {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int integer = 0;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter a positive integer less than 15: ");
+        integer = keyboard.nextInt();
+        while (integer < 1 || integer > 15 )
+            System.out.println("Incorrect, please enter another number! ");
+        
+            
+        
     }
     
 }
