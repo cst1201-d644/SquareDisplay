@@ -17,10 +17,6 @@ public class SquareDisplay {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
-        int raw;
-        int column; 
-
         //for user input
         Scanner sc = new Scanner(System.in);
 
@@ -32,14 +28,14 @@ public class SquareDisplay {
             System.out.print("Incorrect. Please enter another number");
             squareSize = sc.nextInt();
         }
-        
-//display the square
-        for (raw=0; raw<squareSize; raw++) {
-            
-         for (column=0; column<squareSize; column++){
-            { System.out.println("X");
+
+        //display the square
+        for (int raw = 1; raw <= squareSize; raw++) {
+
+            for (int column = 1; column <= squareSize; column++) {
+                System.out.print("X");
+            }
+            System.out.println();
         }
-        
     }
 }
-    }}
