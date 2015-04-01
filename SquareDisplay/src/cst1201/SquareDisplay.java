@@ -30,6 +30,9 @@ public class SquareDisplay {
 
         //At this point, I should have a valid input.
         //2. Draw the square.
+        for(int i = 0; i < 15; i++){
+                System.out.println("X");
+        }
+        System.out.println();
     }
-
 }
