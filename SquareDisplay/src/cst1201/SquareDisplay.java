@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package cst1201;
 
 import java.util.Scanner;
@@ -30,9 +29,12 @@ public class SquareDisplay {
 
         //At this point, I should have a valid input.
         //2. Draw the square.
-        for(int i = 0; i < 15; i++){
-                System.out.println("X");
+        for (int i = 0; i < inputNumber; i++) {
+            for (int h = 0; h < inputNumber; h++) {
+                System.out.print("X");
+            }
+
+            System.out.println();
         }
-        System.out.println();
     }
 }
