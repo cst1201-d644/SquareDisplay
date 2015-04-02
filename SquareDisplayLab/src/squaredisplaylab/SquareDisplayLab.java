@@ -18,13 +18,25 @@ public class SquareDisplayLab {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int integer = 0;
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter a positive integer less than 15: ");
-        integer = keyboard.nextInt();
-        while (integer < 1 || integer > 15 )
-            System.out.println("Incorrect, please enter another number! ");
-        
+        //Ask user for Positive integer no greater than 15
+        //Display an 'X' on the screen
+        //Make the length of the X's match the number entered
+        System.out.println("Please enter a positive integer less than 15: ");
+        Scanner Scanner = new Scanner(System.in);
+        int num = Scanner.nextInt();
+        if (num < 15) {
+            for (int a = 1; a <= num; a++) {
+                for (int b = 1; b <= num; b++) {
+                    System.out.print("X");
+                }
+                System.out.println("");
+            }
+        } else {
+            System.out.println("Error, please try again!");
+        }
+              
+
+    }}
             
         
     }
